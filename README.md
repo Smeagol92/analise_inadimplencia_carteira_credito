@@ -11,6 +11,7 @@ Este projeto consiste na análise de uma carteira de crédito de uma fintech de 
 * **SQL:** Extração, manipulação e agregação dos dados.
 * **Microsoft Excel:** Criação de tabelas dinâmicas, tratamento e criação de faixas (*binning*).
 * **Microsoft PowerPoint:** Elaboração do *storytelling* e apresentação dos resultados para stakeholders.
+* **PowerBI:** Dashboard para visualização de dadps.
 * **GitHub:** Versionamento de código e documentação.
 
 ---
@@ -119,5 +120,5 @@ Abaixo estão detalhadas as propostas de políticas de crédito avaliadas para r
 
 ## 🚀 Próximos Passos
 
-1. **Modelagem Preditiva:** Construção de um modelo de *Machine Learning* para classificação de risco de crédito (utilizando algoritmos como *Regressão Logística* ou *XGBoost*).
-2. **Visualização de Dados:** Desenvolvimento de um painel dinâmico no **Power BI** para monitoramento contínuo dos principais indicadores de risco (KRI).
+1. **Utilização de python:** Construção de um código para realização de análise exploratória dos dados.
+2. **Modelagem Preditiva:** Construção de um modelo de *Machine Learning* para classificação de risco de crédito (utilizando algoritmos como *Regressão Logística* ou *XGBoost*).
