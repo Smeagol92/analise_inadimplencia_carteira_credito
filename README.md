@@ -8,7 +8,8 @@ Este projeto consiste na análise de uma carteira de crédito de uma fintech de 
 
 ## 💻 Tecnologias Utilizadas
 
-* **SQL:** Extração, manipulação e agregação dos dados.
+* **SQL:** Extração, manipulação e agregação dos dados (v1).
+* **Python:** Extração, manipulação e agregação dos dados (v2).
 * **Microsoft Excel:** Criação de tabelas dinâmicas, tratamento e criação de faixas (*binning*).
 * **Microsoft PowerPoint:** Elaboração do *storytelling* e apresentação dos resultados para stakeholders.
 * **PowerBI:** Dashboard para visualização de dadps.
@@ -96,29 +97,32 @@ Para facilitar a análise de distribuição e identificação de padrões de com
 
 Abaixo estão detalhadas as propostas de políticas de crédito avaliadas para reduzir as perdas financeiras e seus respectivos impactos comerciais:
 
-### 1. Bloqueio de Clientes com Restrição Ativa (se Score Interno < 300 OR Relacionamento < 120 dias)
+### 1. Bloqueio de Clientes que nunca obtiveram empréstimo (se Score Interno < 450 OU Relacionamento < 120 dias)
 
-* 👍 **Prós (Ganho):** Evita que **4,45%** dos recursos da carteira sejam direcionados a perdas.
-* 👎 **Contras (Custo):** Reduz em **11,92%** a base total de clientes ativos.
+* 👍 **Prós (Ganho):** Reduz para **15,66%** a inadimplência.
+* 👎 **Contras (Custo):** Reduz em **12,76%** a base total de clientes ativos.
 
-### 2. Suspensão de Empréstimos para Score Interno < 300
+### 2. Suspensão de Empréstimos para Score Interno < 300 e possui restricação
 
-* 👍 **Prós (Ganho):** Poupa **4,72%** do capital total que seria perdido.
-* 👎 **Contras (Custo):** Impacta negativamente a base com uma redução de **4,84%** de clientes.
+* 👍 **Prós (Ganho):** Reduz para **16,97%** a inadimplência.
+* 👎 **Contras (Custo):** Reduz em **2,90%** a base total de clientes ativos.
 
-### 3. Limitação de Limite de Crédito para Novos Clientes (sem empréstimos anteriores e < 120 dias de casa)
+### 3. Revisão e Negociação Contratual com o Marketplace B
 
-* 👍 **Prós (Ganho):** Reduz a exposição ao risco salvando **7,46%** do capital geral sob risco.
-* 👎 **Contras (Custo):** Impacta a experiência inicial de **20,50%** da carteira de clientes.
+* 👍 **Prós (Ganho):** Reduz para **17,11%** a inadimplência.
+* 👎 **Contras (Custo):** Reduz em **5,68%** a base total de clientes ativos.
 
-### 4. Revisão e Negociação Contratual com o Marketplace B
+### 4. Suspensão de Empréstimos para quem possui restrição e solicita acima de R$ 2800,00
 
-* 👍 **Prós (Ganho):** Economia direta de **3,70%** dos recursos totais desperdiçados na inadimplência.
-* 👎 **Contras (Custo):** Afeta **11,38%** do volume transacionado total da fintech.
+* 👍 **Prós (Ganho):** Reduz para **17,78%** a inadimplência.
+* 👎 **Contras (Custo):** Reduz em **1,92%** a base total de clientes ativos.
 
+### 5. Suspensão de Empréstimos para quem possui renda mensal abaixo de R$ 1000,00 e compromete acima de 100% da renda
+
+* 👍 **Prós (Ganho):** Reduz para **18,07%** a inadimplência.
+* 👎 **Contras (Custo):** Reduz em **0,72%** a base total de clientes ativos.
 ---
 
 ## 🚀 Próximos Passos
 
-1. **Utilização de python:** Construção de um código para realização de análise exploratória dos dados.
-2. **Modelagem Preditiva:** Construção de um modelo de *Machine Learning* para classificação de risco de crédito (utilizando algoritmos como *Regressão Logística* ou *XGBoost*).
+1. **Modelagem Preditiva:** Construção de um modelo de *Machine Learning* para classificação de risco de crédito (utilizando algoritmos como *Regressão Logística* ou *XGBoost*).
